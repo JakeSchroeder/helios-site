@@ -1,0 +1,79 @@
+.signup-overlay {
+    display: none;
+}
+
+.signup-overlay.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $bg-color;
+    z-index: 3;
+    text-align: center;
+}
+
+.signup-overlay header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.signup-overlay .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+// .close {
+//     width: 35px;
+// }
+.close {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.close span {
+    height: 3px;
+    width: 100%;
+    background: $txt-primary;
+    position: absolute; // top: 50%;
+    // left: 50%;
+    // transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.close span:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.close span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.signup-form {
+    text-align: left;
+}
+
+
+
+.login-link {
+    color: $main-color;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 48em) {
+    .signup-form {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .signup-overlay .title {
+        text-align: center;
+    }
+}

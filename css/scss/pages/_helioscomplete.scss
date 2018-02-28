@@ -1,0 +1,79 @@
+
+.what-is-helioscomplete {
+    padding-bottom: 25px;
+}
+
+.what-is-helioscomplete .flex-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-is-helioscomplete .description {
+    max-width: 800px;
+}
+
+.what-is-helioscomplete .title {
+    text-align: center;
+}
+
+.tech-approach {
+    padding-bottom: 0;
+    background: $bg-color-odd;
+}
+
+
+
+.tech-approach .col {
+    @include col(1,2,$align:top);
+}
+
+.tech-approach .description:first-child {
+    margin: 0;
+}
+
+.request-meeting .flex-wrapper {
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.request-meeting .title {
+    text-align: center;
+}
+
+.request-meeting .description {
+    max-width: 800px;
+    text-align: center;
+}
+
+.meeting-form {
+    max-width: 800px;
+    margin-top: 25px;
+    width: 100%; 
+}
+
+.meeting-form .col:first-child {
+    padding-left: 0px;
+}
+
+.meeting-form .col:last-child {
+    padding-right: 0px;
+}
+
+.meeting-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.what-is-helioscomplete .container {
+    max-width: 100%;
+}
+
+// .meeting-form .flex-wrapper {
+//     flex-direction: row;
+// }
+
+// .company-input,
+// .meeting-name-input {
+//     width: 50%;
+// }

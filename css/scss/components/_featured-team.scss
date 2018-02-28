@@ -1,0 +1,134 @@
+
+
+
+
+.featured-team .col {
+    @include col(1,2,$align:top);
+}
+
+.featured-team .title {
+    margin-bottom: 50px;
+}
+
+.select-team {
+    margin-bottom: 50px;
+}
+
+
+.name-wheel {
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+    position: relative;
+}
+
+.slide-controls {
+    text-align: center;
+}
+
+.scroll-up-btn,
+.scroll-down-btn {
+    width: 40px;
+    height: 40px;
+    color: $main-color;
+    background: transparent;
+    font-size: 200%;
+    padding: 0;
+}
+
+.scroll-down-btn {
+    margin-top: -20px;
+}
+
+.scroll-up-btn:hover,
+.scroll-down-btn:hover {
+    background: transparent;
+}
+
+.name-wheel ul{
+    height: 54px;
+    overflow-y: hidden;
+    width: 100%;
+    border: 1px solid $bg-color-accent;
+    border-radius: 8px;
+}
+
+.name-wheel ul::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 76px;
+    background: #E0E0E0;
+    bottom: -50px;
+    right: 50%;
+}
+
+
+// .name-cover {
+//     position: absolute;
+//     left: 0;
+//     top: 50%;
+//     width: 100%;
+//     transform: translateY(-50%);
+//     border: 1px solid $bg-color-accent;
+//     background: transparent;
+//     border-radius: 8px;
+//     height: 64px;
+// }
+
+.featured-person {
+
+}
+
+.featured-person::before {
+
+}
+
+.featured-person .description {
+    margin: 0;
+}
+
+.featured-team .tns-outer {
+    padding: 25px !important;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.avatar {
+    text-align: center;
+}
+
+@media only screen and (min-width: 48em) {
+
+    // .featured-team .row {
+    //     margin-top: 100px;
+    // }
+    
+    .select-team {
+        margin-bottom: 0;
+    }
+
+    .name-wheel {
+        padding: 25px 25px 25px 0px;
+        width: 100%;
+    }
+
+    .slide-controls {
+        text-align: left;
+    }
+
+    .slide-controls button:first-child {
+        margin-bottom: 20px;
+    }
+
+    .name-wheel ul::after {
+        content: "";
+        position: absolute;
+        width: 59px;
+        height: 1px;
+        background: #E0E0E0;
+        top: 50%;
+        right: -34px;
+    }
+    
+}   

@@ -1,0 +1,50 @@
+@mixin row () {
+    font-size: 0;
+}
+
+@mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+
+    @media only screen and (min-width: 48em) {
+         padding-left: if($first, 0, $gap);
+        padding-right: if($last, 0, $gap);
+        width: percentage($col/$sum);
+        vertical-align: $align;
+    }
+}
+
+.row {
+    @include row;
+}
+
+.col {
+    @include col(1,2, $align:middle);
+}
+
+// .col:last-child,
+// .col-3:last-child {
+//     padding-right: 0;
+// }
+
+.col img,
+.col-3 img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.col img {
+    
+}
+
+.col-3 {
+    @include col(1,3);
+}
+
+
+@media only screen and (min-width: 48em) {
+    .col img {
+        width: auto;
+    }
+}

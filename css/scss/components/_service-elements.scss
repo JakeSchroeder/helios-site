@@ -1,0 +1,79 @@
+.service-elements .col {
+    @include col(1,2,$align:top)
+}
+
+
+.element-graphic {
+    padding: 50px 0px 50px 0px;
+    
+}
+
+.featured-icon {
+    height: 150px;
+}
+
+
+
+.element-icons li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.element-icons li:last-child {
+    margin: 0;
+}
+
+// .element-icons .right::before {
+//     position: absolute;
+//     content: "";
+//     height: 50px;
+//     width: 1px;
+//     background: $bg-color-accent;
+//     left: 25px;
+//     bottom: 0;
+
+// }
+
+.element-icons img {
+    // width: 100%;
+    // margin-right: 25px;
+    margin-bottom: 0px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $bg-color-accent;
+    border-radius: 8px;
+}
+
+.element-icons .title {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.element-icons .description {
+    margin: 0;
+}
+
+.element-icons .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+}
+
+@media only screen and (min-width: 48em) {
+    .element-graphic {
+        padding: 100px 25px 100px 25px;
+        
+    }
+
+    .element-graphic.prosecution {
+        border-right: 1px solid $bg-color-accent;
+    }
+
+    // .element-graphic img:first-child {
+    //     height: auto;
+    // }
+}
+

@@ -1,0 +1,52 @@
+.btn {
+    background: $main-color;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    color: $bg-color;
+    padding: 10px 15px 10px 15px;
+}
+
+.btn:hover {
+    background: $main-color-dark;
+}
+
+
+.signup-btn,
+.mobile-signup-btn {
+    border: 1px solid $main-color;
+    background: none;
+    color: $main-color;
+}
+
+.signup-btn:hover,
+.mobile-signup-btn:hover {
+    background: $main-color;
+    color: $bg-color;
+}
+
+
+.learn-more-btn {
+    width: 140px;
+    align-self: center;
+}
+
+.signup-form-btn {
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 15px 15px;
+}
+
+
+.login-btn,
+.meeting-btn {
+    width: 100%;
+    padding: 15px 15px;
+}
+
+
+// .resources-btn {
+//     height: 40px;
+// }

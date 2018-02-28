@@ -1,0 +1,101 @@
+
+.interactive-model {
+   margin-top: 25px;
+    // padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    
+}
+
+.interactive-model h3 {
+    margin-top: 25px;
+}
+
+.helioscomplete-model {
+    
+    // border-radius: 8px;
+    // // height: auto;
+    // width: 100%;
+    // height: 100%;
+    // margin: 0 auto;
+}
+
+.helioscomplete-model-mobile {
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+
+.helioscomplete-model-desktop {
+    display: none;
+}
+
+.hover-text {
+    display: none;
+}
+
+
+// .top-left:hover ~ g {
+//     display: block;
+// }
+
+// .portal-popup {
+//     display: block;
+//     position: absolute;
+//     background: $bg-color-odd;
+//     top: 60px;
+//     left: 0;
+//     height: 100px;
+//     width: 200px;
+// }
+
+@media only screen and (min-width: 48em) {
+    .interactive-model {
+        margin-top: 0px;
+    }
+
+    .helioscomplete-model-mobile {
+        display: none;
+    }
+
+    .helioscomplete-model-desktop {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .helioscomplete-model-desktop g {
+        cursor: pointer;
+    }
+    
+    .helioscomplete-model-desktop g {
+        visibility: hidden;
+        
+    }
+
+
+    // .helioscomplete-model-desktop g circle:first-child:hover {
+    //     fill: $main-color;
+    // }
+
+    .helioscomplete-model-desktop g:hover > circle:first-child {
+        fill: $main-color;
+    }
+
+    
+
+    .hover-text {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 56.25em) {
+
+    .interactive-model {
+        margin-top: -100px;
+    }
+
+}
+
+

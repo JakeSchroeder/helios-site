@@ -1,0 +1,23 @@
+// .hero {
+//     padding-top: 25px;
+//     padding-bottom: 25px;
+// }
+
+.hero img {
+    margin: 0;
+}
+
+@media (min-width: 48em) {
+
+    // .hero {
+    //     padding-top: 70px;
+    //     padding-bottom: 70px;
+    // }
+
+    .image-wrapper {
+        width: 400px;
+        height: 300px;
+    }
+
+
+}

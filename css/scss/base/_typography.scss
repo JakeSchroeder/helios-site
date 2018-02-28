@@ -1,0 +1,26 @@
+$sans-serif:  "Open Sans", Helvetica, Verdana, sans-serif;
+$sans-serif-heading: "Nunito", Helvetica, Verdana, sans-serif;
+
+$normal: 400;
+$bold: 700;
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $sans-serif-heading;
+    color: $txt-heading;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.8;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}

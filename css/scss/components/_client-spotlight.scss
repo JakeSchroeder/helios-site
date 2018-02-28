@@ -1,0 +1,45 @@
+
+.client-spotlight {
+    background: $bg-color;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    margin-right: -16px;
+    margin-left: -16px;
+    overflow-y: scroll;
+}
+
+.client-spotlight img {
+    border-radius: 0;
+}
+
+.client-spotlight img:last-child {
+    margin-right: 25px;
+}
+
+
+
+
+
+@media only screen and (min-width: 48em) {
+
+    .client-spotlight {
+        
+        padding: 50px;
+        overflow: hidden;
+    }
+
+    .client-spotlight .flex-wrapper {
+        flex-wrap: wrap;
+        flex-grow: 3;
+    }
+    
+    .client-spotlight li {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .client-spotlight img {
+        width: 100%;
+    }
+}

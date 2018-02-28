@@ -1,0 +1,71 @@
+.what-is-onesource .flex-wrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.what-is-onesource .col {
+    // margin-bottom: 50px;
+    @include col(1,2,$align:top);
+}
+
+.what-is-onesource .col:last-child {
+    text-align: center;
+}
+
+.what-is-onesource img {
+    width: 80%;
+}
+
+.onesource-bullets li {
+    margin-bottom: 50px;
+}
+
+.onesource-bullets li:last-child,
+.onesource-bullets li:last-child .description {
+    margin: 0;
+}
+
+
+.col.layers {
+    position: relative;
+    height: 750px;
+}
+
+
+.layers img {
+    position: absolute;
+    left: 0;
+    margin-left: 16px;
+
+}
+
+.layer1 {
+    top: 0;
+    z-index: 1;
+}
+
+.layer2 {
+    top: 25%;
+    z-index: 0;
+}
+
+.layer3 {
+    top: 50%;
+    z-index: -1;
+}
+
+.layer4 {
+    top: 75%;
+    z-index: -2;
+}
+
+.col.layers {
+    display: none;
+}
+
+@media only screen and (min-width: 48em) {
+    .col.layers {
+        display: inline-block;
+    }
+}

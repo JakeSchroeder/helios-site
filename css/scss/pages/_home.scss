@@ -1,0 +1,56 @@
+.home-hero {
+    padding: 0;
+    position: relative;
+    // background: linear-gradient(180deg,#66a5ff,#0069ff);
+}
+
+.home-hero .row {
+    @include row;
+   
+}
+
+.home-hero .col {
+    @include col(1,2,$align: middle);
+}
+
+.what-is-helios,
+.join-helios {
+    text-align: center;
+}
+
+.what-is-helios .flex-wrapper {
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.what-is-helios .description {
+    max-width: 800px;
+    align-self: center;
+}
+
+.how-we-work .flex-wrapper{
+    flex-direction: column;
+}
+
+.innovative-approach,
+.join-helios {
+    background: $bg-color-odd;
+}
+
+.how-we-work a {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 48em) {
+    .what-is-helios .title,
+    .join-helios .title{
+        text-align: center;
+    }
+
+    .how-we-work a {
+        text-align: left;
+    }
+}
+

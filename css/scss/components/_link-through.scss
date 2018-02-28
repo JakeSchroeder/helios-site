@@ -1,0 +1,105 @@
+
+
+
+
+
+.innovative-approach-nav-list li {
+    background: $bg-color;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+}
+
+.innovative-approach-nav-list .nav-link {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    border: 1px solid $bg-color-accent;
+}
+
+.innovative-approach-nav-list .nav-link:last-child {
+    margin: 0;
+}
+
+.innovative-approach-nav-list .nav-link:hover {
+    border: 1px solid $main-color;
+}
+
+
+
+.innovative-approach-nav-list .flex-wrapper {
+    flex-direction: row;
+    align-items: center;
+}
+
+.innovative-approach-nav-list .right {
+    flex-direction: column;
+}
+
+.resources .icon {
+    height: 50px;
+    width: 50px;
+    
+    margin-right: 25px;
+}
+
+.resources .icon img {
+    margin: 0;
+}
+
+.innovative-approach-nav-list h3 {
+    align-self: flex-start;
+    color: $main-color;
+}
+
+// .resources h3 {
+//     align-self: flex-start;
+// }
+
+// .arrow-icon img {
+//     vertical-align: text-bottom;
+//     width: auto;
+// }
+
+
+@media only screen and (min-width: 48em) {
+
+    .innovative-approach-nav-list {
+        padding-left: 35px;
+        position: relative;
+    }
+
+    .innovative-approach-nav-list:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 10px;
+        display: block;
+        margin: auto auto auto 0;
+        width: 1px;
+        height: 72%;
+        border-left: 1px solid $bg-color-accent;
+        content: "";
+    }
+
+
+    .innovative-approach-nav-list .nav-link::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -25px;
+        display: block;
+        margin: auto auto auto 0;
+        width: 25px;
+        height: 1px;
+        border-top: 1px solid $bg-color-accent;
+        content: "";
+    }
+    
+    .innovative-approach-nav-list .nav-link:nth-child(even)::before {
+        left: -50px;
+        width: 50px;
+    }
+}

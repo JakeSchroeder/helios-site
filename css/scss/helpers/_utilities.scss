@@ -1,0 +1,41 @@
+.margin-b {
+    margin-bottom: 50px;;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.copyright {
+    opacity: .5;
+}
+
+.padding-no {
+    padding: 0;
+}
+
+.padding-b {
+    padding-bottom: 25px;
+}
+
+.border-top {
+    border-top: 1px solid $bg-color-accent;
+}
+
+@media only screen and (min-width: 48em) {
+    .margin-b {
+        margin-bottom: 100px;
+    }
+
+    .padding-b {
+        padding-bottom: 100px;
+    }
+}

@@ -1,0 +1,115 @@
+.main-site-nav {
+    display: none;
+}
+
+.main-site-nav-mobile {
+    display: block;
+}
+
+.nav-item {
+    color: $txt-heading;
+    
+}
+
+.nav-item:hover {
+    color: $main-color;
+    text-decoration: underline;
+    transition: all 500ms ease;
+}
+
+.main-site-nav-mobile .flex-wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    line-height: 0;
+}
+
+.hamburger {
+    // background: $bg-color-odd;
+    width: 35px;
+    height: 21px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger:focus~span {
+    background: $main-color;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 100%;
+    background: $txt-primary;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+    bottom: 0;
+}
+
+.main-site-nav-list-mobile {
+    display: none;
+}
+
+.main-site-nav-list-mobile.show {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 80px;
+    height: 100%;
+    background: #fff;
+    padding: 25px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.main-site-nav-mobile .nav-item {
+    margin-bottom: 25px;
+    display: block;
+    text-align: center;
+}
+
+.main-site-nav-mobile .mobile-signup-btn {
+    width: 100%;
+}
+
+@media only screen and (min-width: 48em) {
+    .main-site-nav-mobile {
+        display: none;
+    }
+
+    .main-site-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-site-nav-list {
+        display: flex;
+    }
+
+    .nav-item {
+        margin-right: 25px;
+    }
+
+    
+}
